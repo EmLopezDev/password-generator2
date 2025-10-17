@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <main class="card">
+            <div class="card__top">
+                <h1 class="card__header">
+                Generate a
+                <span class="card__header--green">random password</span>
+                </h1>
+                <p class="card__details">Never use an insecure password again.</p>
+                <form novalidate class="card__form">
+                    <fieldset class="card__length">
+                        <legend class="card__form--title">Password Length</legend>
+                        <label for="five">
+                        <input id="five" type="radio" name="length" value="5" />
+                            5
+                        </label>
+                        <label for="ten">
+                            <input id="ten" type="radio" name="length" value="10" />
+                            10
+                        </label>
+                        <label for="fifteen">
+                            <input id="fifteen" type="radio" name="length" value="15" checked />
+                            15
+                        </label>
+                    </fieldset>
+                    <fieldset class="card__options">
+                        <legend class="card__form--title">Password Options</legend>
+                        <label for="numbers">
+                            <input id="numbers" type="checkbox" name="option" value="numbers" checked />
+                            Numbers
+                        </label>
+                        <label for="symbols">
+                            <input id="symbols" type="checkbox" name="option" value="symbols" checked />
+                            Symbols
+                        </label>
+                    </fieldset>
+                </form>
+                <button id="generate-button" class="card__button">Generate password</button>
+            </div>
+            <div class="card__bottom">
+                <p id="password-one" class="card__password"></p>
+                <p id="password-two" class="card__password"></p>
+            </div>
+        </main>
+    </body>
+</html>
