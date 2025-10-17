@@ -1,9 +1,11 @@
-*, ::before, ::after, h1 {
+*,
+::before,
+::after,
+h1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     min-height: 100dvh;
@@ -21,7 +23,7 @@ fieldset {
 }
 
 input {
-    margin-inline-end: 2px
+    margin-inline-end: 2px;
 }
 
 label {
@@ -86,7 +88,7 @@ label {
     gap: 20px;
 }
 
-.card__form--title{
+.card__form--title {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -139,4 +141,19 @@ label {
     line-height: 32px;
     letter-spacing: 0%;
     color: rgba(85, 249, 145, 1);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.copied {
+    margin-block-start: 15px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: rgba(85, 249, 145, 1);
+    opacity: 0;
 }
